@@ -31,12 +31,9 @@ async def on_ready():
 @bot.event
 async def on_message(message):
 	mention = f'<@{bot.user.id}>'
-	print(mention)
 	if mention in message.content:
 		args = message.content.split(' ')
-		print(args)
 		if (args[1].lower() == "pokemon"):
-			print("Getting Pokemon...")
 			new_message = get_pokemon_info(args[2].lower())
 			await message.channel.send(new_message)
 	else:
