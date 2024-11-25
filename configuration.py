@@ -30,11 +30,6 @@ def get_token() -> str | None:
 def get_ffmpeg_path() -> str | None:
 	return getenv("FFMPEG_PATH")
 
-if __name__ == "__main__":
-	id = get_general_voice_channel_id()
-	print(id)
-	print(type(id))
-
 def load_vc_configuration(filepath: str) -> Dict[str, List[str]]:
 	config_dictionary = {}
 	with open(filepath) as config_file:
