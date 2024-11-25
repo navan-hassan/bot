@@ -6,7 +6,7 @@ venv/
 *.json
 
 # directory containing sound mp4 files
-sound/
+sounds/
 
 # IDE and linter files
 __pycache__/
