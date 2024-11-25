@@ -1,0 +1,13 @@
+# environment
+venv/
+.env
+
+# used for configuration
+*.json
+
+# directory containing sound mp4 files
+sound/
+
+# IDE and linter files
+__pycache__/
+.mypy_cache/
